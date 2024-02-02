@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+:root {
+    --color-light-50: #f8fafc; 
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-900: #bf46ef; 
+    
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-900));
+    
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* #container {
+height: 100vh;
+width: 100%;
+background: var(--color-gradient);
+#a855f7
+} */
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gradient);
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.for-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a7d7;
+    padding: 1rem;
+}
+
+.for-image img {
+    width: 30rem;
+}
+
+#cadastro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8fafc;
+    gap: 30px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#input-box label {
+    font-size: 14px;
+    color: #000;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-purple-100);
+}
+
+
+/* #input-field icones {
+    font-size: 10px;
+    color: var(--color-dark-900)
+} */
+
+.input-field input {
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px;
+
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.inputUser {
+color: var(--color-dark-100);
+font-size: 15px;
+
+}
+
+#submit {
+    background-image: var(--color-gradient);
+    width: 100%;
+    border: none;
+    color: #f8fafc;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
